@@ -28,3 +28,6 @@
 3. 主要基于 `Kotlin` 构建
 4. 接入Baidu野生动物识别API进行云端识别
 
+https://github.com/BUPT-CS-Assignment/AndroidDevelop/assets/35654252/2c2a6ab0-681c-4b35-965e-88aa9b0408c2
+
+
