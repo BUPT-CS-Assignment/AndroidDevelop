@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#FF74796d</color>
+    <color name="secondary">#FFd9dbd1</color>
+    <color name="outline">#FF43483e</color>
+    <color name="variant">#FFc3c8bb</color>
+    <color name="thin">#FF90948a</color>
+    <color name="container">#FFedefe5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey_lighten">#FFFAFAFA</color>
+    <color name="background">#FFEEEEEE</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

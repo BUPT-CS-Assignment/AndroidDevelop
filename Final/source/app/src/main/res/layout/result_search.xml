@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/background"
+              android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/top_bar"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="15dp"
+            android:backgroundTint="@color/variant"
+            android:background="@drawable/ic_close"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ImageView
+                android:id="@+id/llImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+                android:id="@+id/title"
+                android:text="ANIMAL"
+                android:fontFamily="sans-serif-black"
+                android:textSize="25dp"
+                android:textStyle="normal"
+                android:textColor="@color/outline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toEndOf="@+id/llImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+                android:id="@+id/guide"
+                android:text="结果有误? 还可能是:"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                android:visibility="gone"
+                android:textStyle="normal"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/thin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/llImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title"/>
+        <TextView
+                android:id="@+id/sec_title"
+                android:text="animal"
+                android:visibility="gone"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/llImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guide"/>
+        <TextView
+                android:id="@+id/trd_title"
+                android:text="animal"
+                android:textStyle="normal"
+                android:visibility="gone"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@+id/llImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sec_title"/>
+
+        <WebView
+                android:id="@+id/wvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/llImage"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/wvResult"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
